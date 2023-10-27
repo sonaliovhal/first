@@ -1,0 +1,49 @@
+Certainly! Here are some common interview questions on core Java, along with sample answers:
+
+**1. What is the difference between `final`, `finally`, and `finalize` in Java?**
+
+   - `final` is a keyword used to restrict the inheritance of classes, the overriding of methods, and the modification of variables.
+   - `finally` is a block used in exception handling. It is always executed whether an exception is thrown or not.
+   - `finalize` is a method in the `Object` class used for garbage collection. It is called by the JVM when an object is no longer referenced.
+
+**2. Explain the differences between `String`, `StringBuffer`, and `StringBuilder` in Java.**
+
+   - `String` is immutable, meaning its value cannot be changed after creation.
+   - `StringBuffer` is a mutable and synchronized (thread-safe) version of `String`.
+   - `StringBuilder` is a mutable but non-synchronized (not thread-safe) version of `String`. It is more efficient for single-threaded operations.
+
+**3. What is the difference between `==` and `.equals()` in Java?**
+
+   - `==` is used to compare the memory references of two objects. It checks if two references point to the same object.
+   - `.equals()` is a method used to compare the content or values of two objects. It is overridden in many classes (e.g., `String`) to provide custom comparison logic.
+
+**4. Explain the concept of method overloading and method overriding in Java.**
+
+   - Method Overloading: It is the ability to define multiple methods in the same class with the same name but different parameters (number, type, or order). The compiler determines which method to call based on the arguments passed.
+   
+   - Method Overriding: It occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. It allows the subclass to provide its own version of the method.
+
+**5. What is the `NullPointerException`, and how can it be avoided in Java?**
+
+   - `NullPointerException` is an exception that occurs when you attempt to access or manipulate an object that is not initialized (i.e., null).
+   - To avoid it, ensure that you always check for null before accessing an object, or use proper null-checking techniques, such as using conditional statements or the `Optional` class.
+
+**6. What are the access modifiers in Java, and how do they affect the visibility of variables and methods?**
+
+   - Java has four main access modifiers: `public`, `private`, `protected`, and package-private (default).
+   - `public` makes a variable or method accessible from anywhere.
+   - `private` restricts access to within the class where it is defined.
+   - `protected` allows access within the same class, subclasses, and the same package.
+   - Package-private allows access within the same package.
+
+**7. Explain the difference between an abstract class and an interface in Java.**
+
+   - An abstract class can have both abstract (unimplemented) and concrete (implemented) methods. It can also have fields.
+   - An interface only defines abstract methods and constants (fields are implicitly `public`, `static`, and `final`). A class can implement multiple interfaces, but it can inherit from only one abstract class.
+
+**8. What is the purpose of the `static` keyword in Java?**
+
+   - The `static` keyword is used to declare members (variables and methods) that belong to the class rather than to an instance of the class.
+   - `static` members are shared across all instances of a class and can be accessed using the class name.
+   
+These are just a few common interview questions related to core Java. When preparing for interviews, it's essential to have a solid understanding of these fundamental concepts and be able to provide clear and concise explanations.
